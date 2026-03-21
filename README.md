@@ -1,6 +1,6 @@
 # react-meta-hooks
 
-> **Head management at React speed.**
+> **React Meta Hooks provides fast, declarative head management with SEO-ready meta tags, JSON-LD, and modern React ergonomics.**
 
 A modern, fast, TypeScript-first React npm package for managing `<head>` metadata.
 
