@@ -1,0 +1,48 @@
+{
+  "name": "react-meta-hooks",
+  "version": "1.0.1",
+  "description": "Head management at React speed, powered by hooks.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.2.0",
+    "jsdom": "^24.0.0",
+    "@testing-library/react": "^14.0.0"
+  },
+  "keywords": [
+    "react",
+    "meta",
+    "head",
+    "helmet",
+    "seo",
+    "hooks"
+  ],
+  "author": "",
+  "license": "MIT"
+}
