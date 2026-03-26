@@ -49,14 +49,26 @@ import { useTitle, useDescription, useSocialMeta } from 'react-meta-hooks';
 const BlogPost = () => {
   useTitle('My Awesome Blog Post');
   useDescription('Learn how to manageReact metadata at speed.');
-  
+  useMeta('keywords', 'best blog, top blog, digital blog, awesome blog');
+  useMeta('og:type', 'website');
+  useMeta('twitter:card', 'summary_large_image');
   useSocialMeta({
     title: 'My Awesome Blog Post',
     description: 'Learn how to manageReact metadata at speed.',
     image: 'https://example.com/og-image.jpg',
     url: 'https://example.com/blog/my-awesome-post',
   });
-
+  useStructuredData({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "My blog",
+    "url": "https://test123.com",
+    "logo": "https://test123.com/logo.png",
+    "sameAs": [
+      "https://twitter.com/myblog123",
+      "https://github.com/myblog123"
+    ]
+  });
   return (
     <div>
       <h1>My Awesome Blog Post</h1>
