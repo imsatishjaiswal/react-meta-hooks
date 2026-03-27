@@ -46,9 +46,9 @@ export default Root;
 import React from 'react';
 import { useTitle, useDescription, useSocialMeta } from 'react-meta-hooks';
 
-const BlogPost = () => {
-  useTitle('My Awesome Blog Post');
-  useDescription('Learn how to manageReact metadata at speed.');
+const Home = () => {
+  useTitle('Blog Home Page');
+  useDescription('Read my Awesome Blog Home Page');
   useMeta('keywords', 'best blog, top blog, digital blog, awesome blog');
   useMeta('og:type', 'website');
   useMeta('twitter:card', 'summary_large_image');
@@ -77,7 +77,7 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default Home;
 ```
 
 ## Supported Hooks
