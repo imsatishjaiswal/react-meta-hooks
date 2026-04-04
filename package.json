@@ -1,7 +1,7 @@
 {
   "name": "react-meta-hooks",
-  "version": "1.0.2",
-  "description": "Head management at React speed, powered by hooks.",
+  "version": "1.0.5",
+  "description": "Modern React hooks for managing SEO meta tags, document head, Open Graph, and JSON-LD structured data.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -24,7 +24,7 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0",
-    "react-dom": "^18.2.0"
+    "react-dom": ">=16.8.0"
   },
   "repository": {
     "type": "git",
@@ -48,6 +48,6 @@
     "seo",
     "hooks"
   ],
-  "author": "",
+  "author": "satish",
   "license": "MIT"
 }
